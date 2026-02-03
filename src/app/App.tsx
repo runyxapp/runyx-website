@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import svgPaths from "@/imports/svg-cn1bb5bfku";
+import svgPaths from "../imports/svg-cn1bb5bfku";
 import { ChevronUp } from "lucide-react";
-import { DocCard } from "@/app/components/DocCard";
+import { DocCard } from "./components/DocCard";
 
 function RunyxLogo() {
   return (
@@ -119,9 +119,9 @@ export default function App() {
         </div>
       </header>
 
-      <div className="max-w-[1400px] mx-auto pt-[80px] flex gap-0 pb-20">
+      <div className="max-w-[1400px] mx-auto pt-[80px] flex flex-col md:flex-row gap-0 pb-20">
         {/* Side Navigation */}
-        <aside className="w-[220px] shrink-0 sticky top-[100px] h-fit">
+        <aside className="w-full md:w-[220px] shrink-0 static md:sticky top-[100px] h-fit mb-6 md:mb-0">
           <nav className="py-4">
             <button
               onClick={() => scrollToSection("overview")}
@@ -257,15 +257,11 @@ export default function App() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 px-12 py-8">
+        <main className="flex-1 px-4 md:px-12 py-6 md:py-8">
           {/* Overview Section */}
           <section id="overview" className="mb-20">
             <h2
-              className="text-6xl font-light mb-6 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{
-                WebkitTextFillColor: "transparent",
-                fontStyle: "italic",
-              }}
+              className="text-3xl sm:text-5xl md:text-6xl font-light mb-6 bg-clip-text text-transparent italic bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               Support Page
             </h2>
@@ -286,8 +282,7 @@ export default function App() {
           {/* Privacy Policy */}
           <section id="privacy-policy" className="mb-12">
             <h2
-              className="text-3xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-3xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               Privacy Policy
             </h2>
@@ -299,8 +294,7 @@ export default function App() {
           {/* What we collect */}
           <section id="privacy-collect" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               What we collect
             </h3>
@@ -316,8 +310,7 @@ export default function App() {
           {/* What we do not collect/store */}
           <section id="privacy-not-collect" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               What we do not collect/store
             </h3>
@@ -330,8 +323,7 @@ export default function App() {
           {/* How we use the data */}
           <section id="privacy-use" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               How we use the data
             </h3>
@@ -347,8 +339,7 @@ export default function App() {
           {/* Sharing & leaderboards */}
           <section id="privacy-sharing" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               Sharing & leaderboards
             </h3>
@@ -366,8 +357,7 @@ export default function App() {
           {/* Service providers */}
           <section id="privacy-providers" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               Service providers
             </h3>
@@ -381,8 +371,7 @@ export default function App() {
           {/* Controls (Stop syncing / Disconnect) */}
           <section id="privacy-controls" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               Controls (Stop syncing / Disconnect)
             </h3>
@@ -405,8 +394,7 @@ export default function App() {
           {/* Retention */}
           <section id="privacy-retention" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               Retention
             </h3>
@@ -422,8 +410,7 @@ export default function App() {
           {/* Your rights & requests */}
           <section id="privacy-rights" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               Your rights & requests
             </h3>
@@ -438,8 +425,7 @@ export default function App() {
           {/* Contact */}
           <section id="privacy-contact" className="mb-12">
             <h3
-              className="text-2xl font-normal mb-3 bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
-              style={{ WebkitTextFillColor: "transparent" }}
+              className="text-2xl font-normal mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%]"
             >
               Contact
             </h3>
@@ -447,8 +433,7 @@ export default function App() {
               Support:{" "}
               <a
                 href="mailto:support@runyx.app"
-                className="bg-clip-text bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%] hover:opacity-80 transition-opacity"
-                style={{ WebkitTextFillColor: "transparent" }}
+                className="bg-clip-text text-transparent bg-gradient-to-r from-[#9100ff] from-[26.875%] to-[#d70004] to-[128.13%] hover:opacity-80 transition-opacity"
               >
                 support@runyx.app
               </a>
