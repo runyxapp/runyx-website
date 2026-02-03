@@ -1,11 +1,16 @@
+# Runyx Website
 
-  # RUNYX Website
+Static marketing / support site for Runyx.
 
-  This is a code bundle for RUNYX Website. The original project is available at https://www.figma.com/design/2ZCF3AS3FUzCcUOeNzWubu/RUNYX-Website.
+## Tech
+- Vite
+- React
+- Tailwind CSS
 
-  ## Running the code
+## Development
+npm install
+npm run dev
 
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+## Build
+npm run build
+npm run preview
